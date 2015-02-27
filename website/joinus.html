@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>西典生活</title>
+<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<script type="text/javascript" src="js/jquery.1.9.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="header">
+  <div id="logo">
+    <img src="images/logo.png">
+  </div>
+  <div style="height:0; width:100%; margin:20px auto; *margin:10px auto!important; border-bottom:1px solid #bfbfbf;"></div>
+  <ul id="menu">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="aboutus.html">关于我们</a></li>
+    <li>
+    	<a href="#" id="brandsmenu">品牌介绍</a>
+        <div class="brandssubmenu">
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+            	<tr height="20px;">
+                	<td>木器</td>
+                    <td>沙发</td>
+                    <td>壁炉</td>
+                    <td>灯具/饰品</td>
+                </tr>
+                <tr>
+                	<td>
+                    	<ul>
+                        	<li><a href="brands/encore.html">ENCORE IHF</a></li>
+                            <li><a href="brands/scarborough.html">SCARBOROUGH HOUSE</a></li>
+                            <li><a href="brands/windsor.html">WINDSOR HAMILTION</a></li>
+                            <li><a href="brands/da.html">D&amp;A</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="brands/duresta.html">DURESTA</a></li>
+                            <li><a href="brands/scarborough.html">PARKER&amp;FARR</a></li>
+                            <li><a href="brands/hk.html">HAWKINS BROTHERS</a></li>
+                            <li><a href="brands/tetrad.html">TETRAD</a></li>
+                            <li><a href="brands/wesley.html">WESLEY HALL</a></li>
+                            <li><a href="brands/southern.html">SOUTHERN</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="brands/chesneys.html">CHESNEY'S</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="brands/arte.html">ARTE DI MURANO</a></li>
+                            <li><a href="brands/artemis.html">ARTEMIS HOME</a></li>
+                            <li><a href="brands/globalviews.html">GLOBAL VIEWS</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </li>
+    <li><a href="case.html">设计案例</a></li>
+    <li>
+    	<a href="#" class="select" id="contactmenu">联系我们</a>
+        <div class="contactsubmenu">
+        	<ul>
+            	<li><a href="contactus.html">门店信息</a></li>
+                <li><a href="joinus.html">加入我们</a></li>
+            </ul>
+        </div>
+    </li>
+  </ul>
+  <div class="clear"></div>  
+</div>
+<div id="content">
+  	<div id="title">加入我们</div>
+    <div class="clear"></div>
+    <div id="main">
+    	<div id="description1">
+            <p>西典为顾客呈现的，是丰厚的西方家居文化，传统手工艺的传承，真材实料与合理的价位，值得收藏的传世珍宝。</p>
+            <p>西典为您提供的，是优雅的工作环境，人文关怀的企业文化，完善的企业福利待遇，尽情施展才华的平台，良好的晋升空间，值得尊敬和热爱的事业。</p>
+            <ul>
+            	<li style="list-style:square;">销售设计顾问 （12人）</li>
+                <li style="list-style:none;">1年以上高端商品或家具销售经验，艺术/美学、视觉展示、陈列等设计类专业人士。</li>
+                <li style="list-style:none;">工作时间：5天/周，8小时/天（轮休）</li>
+                <li style="list-style:none;">薪资福利：底薪+提成+补贴+五险一金</li>
+            </ul>
+        </div>
+    </div>    
+  </div>
+  <div class="clear"></div>
+<p class="copyright">Copyright &copy; 2014 theoden Linving History Corporate website</p>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){  
+  $('#brandsmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+	  });
+	  $('#brandsmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.brandssubmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+		$('#brandsmenu').addClass('select');
+	  });
+	  $('.brandssubmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+		$('#brandsmenu').removeClass('select');
+	  });
+	  
+	  /* contact us sub menu */
+	  $('#contactmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+	  });
+	  $('#contactmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.contactsubmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+		$('#contactmenu').removeClass('select');	
+		$('#contactmenu').addClass('select');
+	  });
+	  $('.contactsubmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');		
+	  });
+});
+</script>
+</html>

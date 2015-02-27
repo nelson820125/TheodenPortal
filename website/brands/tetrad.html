@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>西典生活</title>
+<link rel="stylesheet" href="../css/screen.css">
+<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<script type="text/javascript" src="../js/jquery.1.9.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+<div class="header">
+  <div id="logo">
+    <img src="../images/logo.png">
+  </div>
+<div style="height:0; width:100%; margin:20px auto; *margin:10px auto!important; border-bottom:1px solid #bfbfbf;"></div>
+  <ul id="menu">
+    <li><a href="../index.html">首页</a></li>
+    <li><a href="../aboutus.html">关于我们</a></li>
+    <li>
+    	<a href="#" id="brandsmenu" class="select">品牌介绍</a>
+        <div class="brandssubmenu">
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+            	<tr height="20px;">
+                	<td>木器</td>
+                    <td>沙发</td>
+                    <td>壁炉</td>
+                    <td>灯具/饰品</td>
+                </tr>
+                <tr>
+                	<td>
+                    	<ul>
+                        	<li><a href="encore.html">ENCORE IHF</a></li>
+                            <li><a href="scarborough.html">SCARBOROUGH HOUSE</a></li>
+                            <li><a href="windsor.html">WINDSOR HAMILTION</a></li>
+                            <li><a href="da.html">D&amp;A</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="duresta.html">DURESTA</a></li>
+                            <li><a href="pf.html">PARKER&amp;FARR</a></li>
+                            <li><a href="hk.html">HAWKINS BROTHERS</a></li>
+                            <li><a href="tetrad.html" class="select">TETRAD</a></li>
+                            <li><a href="wesley.html">WESLEY HALL</a></li>
+                            <li><a href="southern.html">SOUTHERN</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="chesneys.html">CHESNEY'S</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="arte.html">ARTE DI MURANO</a></li>
+                            <li><a href="artemis.html">ARTEMIS HOME</a></li>
+                            <li><a href="globalviews.html">GLOBAL VIEWS</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </li>
+    <li><a href="../case.html">设计案例</a></li>
+    <li>
+    	<a href="#" id="contactmenu">联系我们</a>
+        <div class="contactsubmenu">
+        	<ul>
+            	<li><a href="../contactus.html">门店信息</a></li>
+                <li><a href="../joinus.html">加入我们</a></li>
+            </ul>
+        </div>
+    </li>
+  </ul>
+  <div class="clear"></div>  
+</div>
+<div id="content">
+  	<div id="title">Tetrad</div>
+    <div class="clear"></div>
+    <div id="main">
+    	<div id="description">
+            <p>Tetrad 和 Harris Tweed是天作之合，至少在英国是这样的。 Tetrad 和 Harris Tweed具有高品质、独特的风格并有一定的传承价值，他们一起为客户提供超级舒适的沙发、椅子。许多很有名气的设计师及有远见的客户都会选择Harris Tweed的布料。传统的哈里斯粗花呢在许多高品质的品牌中出现。Tetrad推出一系列Harris Tweed风格的沙发和椅子，舒适度、品质符合我们对家具的期待。我们保证您所购买的Tetrad 和 Harris Tweed是最好的，绝对是英国制造，百分之百的英国血统。Tetred沙发将传统手工艺与最好的材料完美结合，布艺、皮艺和毛呢材料的运用，舒适怀旧甚至俏皮的英伦气质是特色。在光滑无暇的牛皮做彩色印花，题材丰富。</p>
+            <p>Tetrad产品完美地展现了我们的工艺及品质，其毋庸置疑的时尚样式完全是由我们的专家团队手工打造出来的，他们确保每一件产品都是时尚与质量的完美融合。我们知道家具对于您来说不仅只有使用价值，也是您家里特色的集中体现。我们的设计师团队不遗余力的创作新的风格和样式来满足大家的品味。所有的Tetrad沙发、椅子及脚踏都采用极高标准的耐用的硬木框架、多样的支撑物、高品质的面料及填充物，这些都让您在好的品质下有更多的选择。</p>
+        </div>
+        <div id="showbox">
+        	<img alt="" src="../images/brands/tetrad.png" />
+        </div>
+    </div>    
+  </div>
+  <div class="clear"></div>
+<p class="copyright">Copyright &copy; 2014 theoden Linving History Corporate website</p>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){  
+  $('#brandsmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+	  });
+	  $('#brandsmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.brandssubmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+		$('#brandsmenu').removeClass('select');
+		$('#brandsmenu').addClass('select');
+	  });
+	  $('.brandssubmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');		
+	  });
+	  
+	  /* contact us sub menu */
+	  $('#contactmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+	  });
+	  $('#contactmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.contactsubmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+		$('#contactmenu').addClass('select');
+	  });
+	  $('.contactsubmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+		$('#contactmenu').removeClass('select');
+	  });
+});
+</script>
+</html>

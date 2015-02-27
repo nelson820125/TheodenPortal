@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>西典生活</title>
+<link rel="stylesheet" href="../css/screen.css">
+<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<script type="text/javascript" src="../js/jquery.1.9.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+<div class="header">
+  <div id="logo">
+    <img src="../images/logo.png">
+  </div>
+<div style="height:0; width:100%; margin:20px auto; *margin:10px auto!important; border-bottom:1px solid #bfbfbf;"></div>
+  <ul id="menu">
+    <li><a href="../index.html">首页</a></li>
+    <li><a href="../aboutus.html">关于我们</a></li>
+    <li>
+    	<a href="#" id="brandsmenu" class="select">品牌介绍</a>
+        <div class="brandssubmenu">
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+            	<tr height="20px;">
+                	<td>木器</td>
+                    <td>沙发</td>
+                    <td>壁炉</td>
+                    <td>灯具/饰品</td>
+                </tr>
+                <tr>
+                	<td>
+                    	<ul>
+                        	<li><a href="encore.html">ENCORE IHF</a></li>
+                            <li><a href="scarborough.html" class="select">SCARBOROUGH HOUSE</a></li>
+                            <li><a href="windsor.html">WINDSOR HAMILTION</a></li>
+                            <li><a href="da.html">D&amp;A</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="duresta.html">DURESTA</a></li>
+                            <li><a href="pf.html">PARKER&amp;FARR</a></li>
+                            <li><a href="hk.html">HAWKINS BROTHERS</a></li>
+                            <li><a href="tetrad.html">TETRAD</a></li>
+                            <li><a href="wesley.html">WESLEY HALL</a></li>
+                            <li><a href="southern.html">SOUTHERN</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="chesneys.html">CHESNEY'S</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="arte.html">ARTE DI MURANO</a></li>
+                            <li><a href="artemis.html">ARTEMIS HOME</a></li>
+                            <li><a href="globalviews.html">GLOBAL VIEWS</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </li>
+    <li><a href="../case.html">设计案例</a></li>
+    <li>
+    	<a href="#" id="contactmenu">联系我们</a>
+        <div class="contactsubmenu">
+        	<ul>
+            	<li><a href="../contactus.html">门店信息</a></li>
+                <li><a href="../joinus.html">加入我们</a></li>
+            </ul>
+        </div>
+    </li>
+  </ul>
+  <div class="clear"></div>  
+</div>
+<div id="content">
+  	<div id="title">Scarborough House</div>
+    <div class="clear"></div>
+    <div id="main">
+    	<div id="description">
+            <p>Sarborough成品于1996年，由英国人Jonathan buxton创立，Sarborough源于英国，在美国创办并设专业生产基地于菲律宾。Jonathan buxton是欧洲资深的家具设计师和优秀的家具制作技术人士。Sarborough的展厅和库房位于美国高点市，产品销售网络遍布全球，在纽约、伦敦和东京最高档最专业的商场展示，这有赖于Sarborough的产品有很高的品质和设计理念。</p>
+            <p>Sarborough只用最优质的原材料制作，产品的核心在于精湛的薄木镶嵌工艺，原材料选用最优质的桃花芯木木杈部分和名贵木材树瘤，这些材料的品质长久稳定，制作出的家具是值得拥有者代代相传的。Sarborough家具的另一大亮点在于自行设计和铸造的铜件，并与家具有最完美的搭配。</p>
+            <p>当您在购买Sarborough家具的时候您完全可以对家具的品质和工艺有很高的期望。Sarborough的家具大部分都是手工艺制作，制作出来的产品是富有个性和温馨舒适的。Sarborough的原创英伦风格设计是经典，这个风格是可以长久流传的。</p>
+        </div>
+        <div id="showbox">
+        	<img alt="" src="../images/brands/Scarborough.png" />
+        </div>
+    </div>    
+  </div>
+  <div class="clear"></div>
+<p class="copyright">Copyright &copy; 2014 theoden Linving History Corporate website</p>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){  
+  $('#brandsmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+	  });
+	  $('#brandsmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.brandssubmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+		$('#brandsmenu').removeClass('select');
+		$('#brandsmenu').addClass('select');
+	  });
+	  $('.brandssubmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');		
+	  });
+	  
+	  /* contact us sub menu */
+	  $('#contactmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+	  });
+	  $('#contactmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.contactsubmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+		$('#contactmenu').addClass('select');
+	  });
+	  $('.contactsubmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+		$('#contactmenu').removeClass('select');
+	  });
+});
+</script>
+</html>

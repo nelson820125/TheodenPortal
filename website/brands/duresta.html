@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>西典生活</title>
+<link rel="stylesheet" href="../css/screen.css">
+<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<script type="text/javascript" src="../js/jquery.1.9.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+<div class="header">
+  <div id="logo">
+    <img src="../images/logo.png">
+  </div>
+<div style="height:0; width:100%; margin:20px auto; *margin:10px auto!important; border-bottom:1px solid #bfbfbf;"></div>
+  <ul id="menu">
+    <li><a href="../index.html">首页</a></li>
+    <li><a href="../aboutus.html">关于我们</a></li>
+    <li>
+    	<a href="#" id="brandsmenu" class="select">品牌介绍</a>
+        <div class="brandssubmenu">
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+            	<tr height="20px;">
+                	<td>木器</td>
+                    <td>沙发</td>
+                    <td>壁炉</td>
+                    <td>灯具/饰品</td>
+                </tr>
+                <tr>
+                	<td>
+                    	<ul>
+                        	<li><a href="encore.html">ENCORE IHF</a></li>
+                            <li><a href="scarborough.html">SCARBOROUGH HOUSE</a></li>
+                            <li><a href="windsor.html">WINDSOR HAMILTION</a></li>
+                            <li><a href="da.html">D&amp;A</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="duresta.html" class="select">DURESTA</a></li>
+                            <li><a href="pf.html">PARKER&amp;FARR</a></li>
+                            <li><a href="hk.html">HAWKINS BROTHERS</a></li>
+                            <li><a href="tetrad.html">TETRAD</a></li>
+                            <li><a href="wesley.html">WESLEY HALL</a></li>
+                            <li><a href="southern.html">SOUTHERN</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="chesneys.html">CHESNEY'S</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="arte.html">ARTE DI MURANO</a></li>
+                            <li><a href="artemis.html">ARTEMIS HOME</a></li>
+                            <li><a href="globalviews.html">GLOBAL VIEWS</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </li>
+    <li><a href="../case.html">设计案例</a></li>
+    <li>
+    	<a href="#" id="contactmenu">联系我们</a>
+        <div class="contactsubmenu">
+        	<ul>
+            	<li><a href="../contactus.html">门店信息</a></li>
+                <li><a href="../joinus.html">加入我们</a></li>
+            </ul>
+        </div>
+    </li>
+  </ul>
+  <div class="clear"></div>  
+</div>
+<div id="content">
+  	<div id="title">DURESTA</div>
+    <div class="clear"></div>
+    <div id="main">
+    	<div id="description">
+            <p>作为纯正的英伦奢华品牌，DURESTA沙发有着75年的品牌沉淀，坚持由资深的工匠纯手工打造，令它拥有个性化的手工剪裁和高超的缝纫技巧，以及不同的色彩搭配。给我们提供了充满艺术气息的家居享受。作为英国皇室及英国议会的御用沙发，DURESTA还有众多的拥有者，其中包括：凯特王妃，普京，贝克汉姆等名人，因此DURESTA也成为人们眼中的顶级奢侈品沙发。</p>
+            <p>每一件DURESTA帝瑞斯特沙发坚持选用英国和欧洲最上等的布料、木材和配件，由资深的工匠纯手工制造，不但强调优越的使用体验，更在塑造空间性格，表达拥有者或者使用者内敛、优雅的奢华气质。独特的剪裁与专业的缝纫使得每件产品都能够通过严格的质量检验。每张沙发的木框架皆采用加拿大及欧洲生长的上等硬木，经由手工精密的榫接、胶黏，再锁上螺丝及上漆，以达到零故障及恒久的使用年限。框架的结构处理皆由工作资历15-20年之久的专业师傅独立完成组装作业，其中富弹性的旋状弹簧座、具抗火性的泡棉及内填物，使每一张沙发皆符合英国政府最新的安全标准。经典的设计及全手工的制作工艺令DURESTA不仅仅是一件家居品，更是一件有价值的收藏品。</p>
+        </div>
+        <div id="showbox">
+        	<img alt="" src="../images/brands/duresta.png" />
+        </div>
+    </div>    
+  </div>
+  <div class="clear"></div>
+<p class="copyright">Copyright &copy; 2014 theoden Linving History Corporate website</p>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){  
+  $('#brandsmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+	  });
+	  $('#brandsmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.brandssubmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+		$('#brandsmenu').removeClass('select');
+		$('#brandsmenu').addClass('select');
+	  });
+	  $('.brandssubmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');		
+	  });
+	  
+	  /* contact us sub menu */
+	  $('#contactmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+	  });
+	  $('#contactmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.contactsubmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+		$('#contactmenu').addClass('select');
+	  });
+	  $('.contactsubmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+		$('#contactmenu').removeClass('select');
+	  });
+});
+</script>
+</html>

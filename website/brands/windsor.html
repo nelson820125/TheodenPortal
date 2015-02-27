@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>西典生活</title>
+<link rel="stylesheet" href="../css/screen.css">
+<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<script type="text/javascript" src="../js/jquery.1.9.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+<div class="header">
+  <div id="logo">
+    <img src="../images/logo.png">
+  </div>
+<div style="height:0; width:100%; margin:20px auto; *margin:10px auto!important; border-bottom:1px solid #bfbfbf;"></div>
+  <ul id="menu">
+    <li><a href="../index.html">首页</a></li>
+    <li><a href="../aboutus.html">关于我们</a></li>
+    <li>
+    	<a href="#" id="brandsmenu" class="select">品牌介绍</a>
+        <div class="brandssubmenu">
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+            	<tr height="20px;">
+                	<td>木器</td>
+                    <td>沙发</td>
+                    <td>壁炉</td>
+                    <td>灯具/饰品</td>
+                </tr>
+                <tr>
+                	<td>
+                    	<ul>
+                        	<li><a href="encore.html">ENCORE IHF</a></li>
+                            <li><a href="scarborough.html">SCARBOROUGH HOUSE</a></li>
+                            <li><a href="windsor.html" class="select">WINDSOR HAMILTION</a></li>
+                            <li><a href="da.html">D&amp;A</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="duresta.html">DURESTA</a></li>
+                            <li><a href="pf.html">PARKER&amp;FARR</a></li>
+                            <li><a href="hk.html">HAWKINS BROTHERS</a></li>
+                            <li><a href="tetrad.html">TETRAD</a></li>
+                            <li><a href="wesley.html">WESLEY HALL</a></li>
+                            <li><a href="southern.html">SOUTHERN</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="chesneys.html">CHESNEY'S</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="arte.html">ARTE DI MURANO</a></li>
+                            <li><a href="artemis.html">ARTEMIS HOME</a></li>
+                            <li><a href="globalviews.html">GLOBAL VIEWS</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </li>
+    <li><a href="../case.html">设计案例</a></li>
+    <li>
+    	<a href="#" id="contactmenu">联系我们</a>
+        <div class="contactsubmenu">
+        	<ul>
+            	<li><a href="../contactus.html">门店信息</a></li>
+                <li><a href="../joinus.html">加入我们</a></li>
+            </ul>
+        </div>
+    </li>
+  </ul>
+  <div class="clear"></div>  
+</div>
+<div id="content">
+  	<div id="title">WINDSOR HAMILTON</div>
+    <div class="clear"></div>
+    <div id="main">
+    	<div id="description">
+            <p>WINDSOR HAMILTON是首屈一指的精致家具制造商，致力于精致古董家具的复制，设计和生产欧式古董家具，同时也设计自己独特的过渡时期作品。与众不同之处，在于非常专注于细节且追求高品质的生产。WINDSOR HAMILTON追求细节的品质也体现在拥有自己的黄铜铸造厂，在这里生产所使用的五金器件，这样一来，每设计一款新的家具就可以同时设计相应的把手、铰链、锁及钥匙。为了保证产品的精美，每一位工匠在正式入职前都会经过长期系统的专业培训，品牌的手工匠具备全能的技艺，以工作为荣，其中不乏从艺几十年的经验老者，使用传统的技艺，这样制作出来的都是高质量且有灵魂的产品。许多灵感来源于古董原型，我们会尽可能完全地去复制，而有时也会加入一些喜欢的细节，因此一件新款的家具就出现了。WINDSOR HAMILTON在设计上从不妥协，品质上也绝不妥协。使用最好的材料，产品出厂前各环节反复监察，以确保没有疏漏。</p>
+            <p>WINDSOR HAMILTON的产品深受注重细节和制作精美是它的一个标志，错综复杂的薄片镶嵌与拼花、精确细致的雕刻与涂饰、传统工艺的五金器件展现了它的卓越品质，是古董品复制与诠释的首选设计者及生产者。</p>
+        </div>
+        <div id="showbox">
+        	<img alt="" src="../images/brands/windsor.png" />
+        </div>
+    </div>    
+  </div>
+  <div class="clear"></div>
+<p class="copyright">Copyright &copy; 2014 theoden Linving History Corporate website</p>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){  
+  $('#brandsmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+	  });
+	  $('#brandsmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.brandssubmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+		$('#brandsmenu').removeClass('select');
+		$('#brandsmenu').addClass('select');
+	  });
+	  $('.brandssubmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');		
+	  });
+	  
+	  /* contact us sub menu */
+	  $('#contactmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+	  });
+	  $('#contactmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.contactsubmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+		$('#contactmenu').addClass('select');
+	  });
+	  $('.contactsubmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+		$('#contactmenu').removeClass('select');
+	  });
+});
+</script>
+</html>

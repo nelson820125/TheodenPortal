@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>西典生活</title>
+<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<script type="text/javascript" src="js/jquery.1.9.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="header">
+  <div id="logo">
+    <img src="images/logo.png">
+  </div>
+  <div style="height:0; width:100%; margin:20px auto; *margin:20px auto!important; border-bottom:1px solid #bfbfbf;"></div>
+  <ul id="menu">
+    <li><a href="index.html" class="select">首页</a></li>
+    <li><a href="aboutus.html">关于我们</a></li>
+    <li>
+    	<a href="#" id="brandsmenu">品牌介绍</a>
+        <div class="brandssubmenu">
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+            	<tr height="20px;">
+                	<td>木器</td>
+                    <td>沙发</td>
+                    <td>壁炉</td>
+                    <td>灯具/饰品</td>
+                </tr>
+                <tr>
+                	<td>
+                    	<ul>
+                        	<li><a href="brands/encore.html">ENCORE IHF</a></li>
+                            <li><a href="brands/scarborough.html">SCARBOROUGH HOUSE</a></li>
+                            <li><a href="brands/windsor.html">WINDSOR HAMILTION</a></li>
+                            <li><a href="brands/da.html">D&amp;A</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="brands/duresta.html">DURESTA</a></li>
+                            <li><a href="brands/scarborough.html">PARKER&amp;FARR</a></li>
+                            <li><a href="brands/hk.html">HAWKINS BROTHERS</a></li>
+                            <li><a href="brands/tetrad.html">TETRAD</a></li>
+                            <li><a href="brands/wesley.html">WESLEY HALL</a></li>
+                            <li><a href="brands/southern.html">SOUTHERN</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="brands/chesneys.html">CHESNEY'S</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="brands/arte.html">ARTE DI MURANO</a></li>
+                            <li><a href="brands/artemis.html">ARTEMIS HOME</a></li>
+                            <li><a href="brands/globalviews.html">GLOBAL VIEWS</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </li>
+    <li><a href="case.html">设计案例</a></li>
+    <li>
+    	<a href="#" id="contactmenu">联系我们</a>
+        <div class="contactsubmenu">
+        	<ul>
+            	<li><a href="contactus.html">门店信息</a></li>
+                <li><a href="joinus.html">加入我们</a></li>
+            </ul>
+        </div>
+    </li>
+    <div class="clear"></div>
+  </ul>
+  <div class="clear"></div>
+</div>
+<ul class="bxslider">
+  <li><img src="images/index-1.png" /></li>
+  <li><img src="images/index-2.png" /></li>
+  <li><img src="images/index-3.png" /></li>
+  <li><img src="images/index-4.png" /></li>
+  <li><img src="images/index-5.png" /></li>
+  <li><img src="images/index-6.png" /></li>
+  <li><img src="images/index-7.png" /></li>
+</ul>
+<p class="copyright">Copyright &copy; 2014 theoden Linving History Corporate website</p>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.bxslider').bxSlider({mode:'fade', speed:800});
+  
+  $('#brandsmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+	  });
+	  $('#brandsmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.brandssubmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+		$('#brandsmenu').addClass('select');
+	  });
+	  $('.brandssubmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+		$('#brandsmenu').removeClass('select');
+	  });
+	  
+	  /* contact us sub menu */
+	  $('#contactmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+	  });
+	  $('#contactmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.contactsubmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+		$('#contactmenu').addClass('select');
+	  });
+	  $('.contactsubmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+		$('#contactmenu').removeClass('select');
+	  });
+});
+</script>
+</html>

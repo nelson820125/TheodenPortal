@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>西典生活</title>
+<link rel="stylesheet" href="../css/screen.css">
+<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<script type="text/javascript" src="../js/jquery.1.9.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+<div class="header">
+  <div id="logo">
+    <img src="../images/logo.png">
+  </div>
+<div style="height:0; width:100%; margin:20px auto; *margin:10px auto!important; border-bottom:1px solid #bfbfbf;"></div>
+  <ul id="menu">
+    <li><a href="../index.html">首页</a></li>
+    <li><a href="../aboutus.html">关于我们</a></li>
+    <li>
+    	<a href="#" id="brandsmenu" class="select">品牌介绍</a>
+        <div class="brandssubmenu">
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+            	<tr height="20px;">
+                	<td>木器</td>
+                    <td>沙发</td>
+                    <td>壁炉</td>
+                    <td>灯具/饰品</td>
+                </tr>
+                <tr>
+                	<td>
+                    	<ul>
+                        	<li><a href="encore.html">ENCORE IHF</a></li>
+                            <li><a href="scarborough.html">SCARBOROUGH HOUSE</a></li>
+                            <li><a href="windsor.html">WINDSOR HAMILTION</a></li>
+                            <li><a href="da.html">D&amp;A</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="duresta.html">DURESTA</a></li>
+                            <li><a href="pf.html">PARKER&amp;FARR</a></li>
+                            <li><a href="hk.html">HAWKINS BROTHERS</a></li>
+                            <li><a href="tetrad.html">TETRAD</a></li>
+                            <li><a href="wesley.html">WESLEY HALL</a></li>
+                            <li><a href="southern.html">SOUTHERN</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="chesneys.html">CHESNEY'S</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                    	<ul>
+                        	<li><a href="arte.html">ARTE DI MURANO</a></li>
+                            <li><a href="artemis.html" class="select">ARTEMIS HOME</a></li>
+                            <li><a href="globalviews.html">GLOBAL VIEWS</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </li>
+    <li><a href="../case.html">设计案例</a></li>
+    <li>
+    	<a href="#" id="contactmenu">联系我们</a>
+        <div class="contactsubmenu">
+        	<ul>
+            	<li><a href="../contactus.html">门店信息</a></li>
+                <li><a href="../joinus.html">加入我们</a></li>
+            </ul>
+        </div>
+    </li>
+  </ul>
+  <div class="clear"></div>  
+</div>
+<div id="content">
+  	<div id="title">Artemis Home</div>
+    <div class="clear"></div>
+    <div id="main">
+    	<div id="description">
+            <p>ARTEMIS HOME灯饰品牌源自英国的高档家居品牌，成立于2007年，全球扩展了超过20个国家，其设计理念堪称古典和现代的完美结合，创造了诸多经典产品，成为国际顶尖的经典家居品牌。 ARTEMIS HOME与全世界众多有影响力的一流设计大师合作，如：新古典主义设计师Thomas O’Brien；被美国杂志评为“美国前100名设计师”的Alexa Hampton；世界上最杰出、最富才华的设计师之一Barbara Barry；Sandy Chapmen等。设计大师们的个性化创新思维，从传统到休闲，重新演绎奢华惊艳的设计，更为ARTEMIS HOME的每一款产品注入原创精神，并将家居产品的精髓发挥到淋漓尽致，引领了家居市场的潮流。</p>
+            <p>产品执行最高质量标准来完成复杂工艺，采用上等铜料、水晶等珍贵材料手工制作，体现了非凡的价值，包含了灯具、小家具、小摆件等等，每一件稀世珍品都将点缀在我们的生活之中。</p>
+        </div>
+        <div id="showbox">
+        	<img alt="" src="../images/brands/artemis.png" />
+        </div>
+    </div>    
+  </div>
+  <div class="clear"></div>
+<p class="copyright">Copyright &copy; 2014 theoden Linving History Corporate website</p>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){  
+  $('#brandsmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+	  });
+	  $('#brandsmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.brandssubmenu').mouseover(function(){
+		$('.brandssubmenu').css('visibility', 'visible');
+		$('#brandsmenu').removeClass('select');
+		$('#brandsmenu').addClass('select');
+	  });
+	  $('.brandssubmenu').mouseout(function(){
+		$('.brandssubmenu').css('visibility', 'hidden');		
+	  });
+	  
+	  /* contact us sub menu */
+	  $('#contactmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+	  });
+	  $('#contactmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+	  });
+	  
+	  $('.contactsubmenu').mouseover(function(){
+		$('.contactsubmenu').css('visibility', 'visible');
+		$('#contactmenu').addClass('select');
+	  });
+	  $('.contactsubmenu').mouseout(function(){
+		$('.contactsubmenu').css('visibility', 'hidden');
+		$('#contactmenu').removeClass('select');
+	  });
+});
+</script>
+</html>

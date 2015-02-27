@@ -1,0 +1,74 @@
+body{ margin: 0; padding: 0;}
+.header{ width: 970px; margin: 0 auto;}
+.header #logo{ width: 148px; margin:20px auto 10px auto; *margin:20px auto 0 auto!important;}
+.header #logo img{ border: none; width:148px; height:73px;}
+.header #menu{ margin: 0px auto 5px 150px; *margin:20px auto 0 200px!important;}
+.header #menu li{ float: left; list-style: none; margin-right: 90px;}
+.header #menu li a{ color: #999999; font-family:"微软雅黑", Times, serif; text-decoration: none; font-size: 10pt;}
+.header #menu li a.select{ color: #000; font-family:"微软雅黑", Times, serif; text-decoration: none; font-size: 10pt;}
+.header #menu li a:hover{ color: #000; font-family:"微软雅黑", Times, serif; text-decoration: none; font-size: 10pt;}
+.clear{ clear: both;}
+.bx-wrapper{ width:970px; margin-top:20px; *margin:0 auto!important;}
+.bxslider{margin-top:0; padding:0; *float:left!important; *margin-left:0!important;}
+p.copyright{ width: 970px; text-align: center; font-family:"微软雅黑"; font-size:9pt; margin:0 auto 10px auto;}
+
+#content{margin:20px auto; width:970px; height:460px; background:url(../images/aboutus-background.png);}
+#content #title{ font-family:"微软雅黑"; font-size:16pt; color:#555555; padding:15px 25px 10px 25px;}
+#content #main{padding:0 0 0 25px;}
+#content #description{ font-family:"微软雅黑"; font-size:9pt; line-height:30px; width:620px; float:left; color:#666666}
+#content #description p{ margin-top:0;}
+#content #showbox{ float:right; border:1px #cbcbcb solid; padding:5px; margin-right:30px;}
+
+/* case page */
+#content #main #thum {padding:40px 20px 0 10px; *padding:40px 0 0 0!important; *margin-left:0!important;}
+#content #main #thum .thum1{padding:0;margin-left:10px;}
+#content #main #thum .thum2{padding:0;margin-left:15px;}
+#content #main #thum .thum3{padding:0;margin-left:15px;}
+#content #main #thum .thum4{padding:0;margin-left:15px;}
+#content #main #thum li{float:left; margin-right:25px;list-style:none;width:200px;}
+#content #main #thum li .casebox{padding:5px; width:200px; border:1px #cbcbcb solid;}
+#content #main #thum li .casebox img{border:none;}
+#content #main #allmap{width:650px;height: 350px; float:left;}
+#content #main .contact{float:right; font-family:"微软雅黑"; font-size:9pt; height:400px; color:#666666;}
+#content #main .contact .webchatDiv{text-align:center; width:125px; margin-left:130px; margin-top:100px; right:5px; bottom:5px; font-family:"微软雅黑"; font-size:9pt; color:#666666;}
+#content #main .contact table td{ padding:5px;}
+#content #main .contact table td .Ph{margin:0 auto; width:26px; height:32px; background:url(../images/icons/contact.png) no-repeat -22px 0px;}
+#content #main .contact table td .Time{margin:0 auto; width:31px; height:32px; background:url(../images/icons/contact.png) no-repeat -48px 0px;}
+#content #main .contact table td .addr{margin:0 auto; width:22px; height:32px; background:url(../images/icons/contact.png) no-repeat 0px 0px;}
+#content #main .contact table td .Webchat{margin:0 auto; width:35px; height:32px; background:url(../images/icons/contact.png) no-repeat -79px 2px;}
+
+/* join us*/
+#content #description1{ font-family:"微软雅黑"; font-size:9pt; padding:0; line-height:30px; float:left; color:#666666;}
+#content #description1 p{padding:0; margin:0; line-height:20pt;}
+#content #description1 ul{ padding-left:15px; *float:left!important; *margin-left:0px!important;}
+
+/* brands */
+#content #encoreLogo img{ float:right; margin-top:5px; border:none; margin-right:30px;}
+
+/* bitmore */
+#bitmoreContent{margin:10px auto; width:970px; padding:20px;}
+#bitmoreContent #title{font-family:"微软雅黑"; font-size:16pt; color:#555555;}
+#bitmoreContent .rowstyle{margin-top:10px;}
+#bitmoreContent .rowstyle .bitmore1{float:left; width:460px; height:298px; background:url(../images/brands/bitmore-1.png);}
+#bitmoreContent .rowstyle .bitmore2{float:left; margin-left:20px; width:460px; height:298px; background:url(../images/brands/bitmore-2.png);}
+#bitmoreContent .rowstyle p{font-family:"微软雅黑"; font-size:9pt; line-height:20pt; color:#666666;}
+#bitmoreContent .rowstyle .bitmore3{float:left; width:470px; height:304px; background:url(../images/brands/bitmore-3.png);}
+#bitmoreContent .rowstyle .bitmore4{float:left; width:243px; height:304px; margin-left:10px; background:url(../images/brands/bitmore-4.png);}
+#bitmoreContent .rowstyle .bitmore5{float:left; width:214px; height:304px; margin-left:10px; background:url(../images/brands/bitmore-5.png);}
+#bitmoreContent .rowstyle .bitmore6{float:left; width:460px; height:246px; background:url(../images/brands/bitmore-6.png);}
+#bitmoreContent .rowstyle .bitmore7{float:left; width:460px; height:298px; margin-left:20px; background:url(../images/brands/bitmore-7.png);}
+
+/* sub menu - brands */
+.header #menu .brandssubmenu{width:617px; height:182px; background:url(../images/brandsmenubg.png); visibility:hidden; position:absolute; z-index:99999; margin-left:-30px; *margin:15pt auto auto -77pt!important;}
+.header #menu .brandssubmenu table{margin:15px; color:#999999; font-family:"微软雅黑"; font-size:10pt;}
+.header #menu .brandssubmenu table tr td{ text-align:left; vertical-align:top;}
+.header #menu .brandssubmenu table ul {padding:0; margin-top:10px; *margin-left:0!important;}
+.header #menu .brandssubmenu table ul li{ float:none; list-style:none; margin:0; line-height:16pt;}
+.header #menu .brandssubmenu table ul li a{ font-size:10pt;}
+
+/* sub menu - contact us */
+.header #menu .contactsubmenu{width:94px; height:67px; background:url(../images/contactusmenubg.png); visibility:hidden; position:absolute; z-index:99999; margin-left:-15px; *margin:15pt auto auto -65pt!important;}
+.header #menu .contactsubmenu ul {padding:0; margin:12px 20px 20px 20px;}
+.header #menu .contactsubmenu ul li{ float:none; list-style:none; margin:0;  line-height:20pt;}
+.header #menu .contactsubmenu ul li a{ font-size:10pt;}
+
